@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title id="seoTitle">Free AI Tools Hub – Best Free Online Tools & AI Directory 2026</title>
+<meta id="seoDesc" name="description" content="Use free online browser tools (prompt builder, summarizer, word counter, JSON formatter, password generator) and explore 30+ top free AI tools like ChatGPT, Claude, Midjourney & Canva.">
+<meta property="og:title" content="Free AI Tools Hub">
+<meta property="og:description" content="Free browser tools plus a curated directory of 30+ best free AI tools.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+<link rel="manifest" href="manifest.json">
+<script>try{if(localStorage.theme==='dark'||(!localStorage.theme&&matchMedia('(prefers-color-scheme:dark)').matches))document.documentElement.classList.add('dark')}catch(e){}</script>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={darkMode:'class'}</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style id="site-theme">
+:root{--text:#1e293b;--bg:#f8fafc;--glass:rgba(255,255,255,.72);--glass-hover:rgba(255,255,255,.95);--glass-border:rgba(15,23,42,.09);--muted:#475569;--title:#0f172a;--hero-from:#0f172a;--glow-a:rgba(168,85,247,.12);--glow-b:rgba(59,130,246,.10);--badge-bg:rgba(168,85,247,.10);--badge-fg:#7c3aed;--badge-border:rgba(168,85,247,.20);--link:#2563eb;--link-hover:#1d4ed8;--icon-bg:rgba(15,23,42,.04);--icon-border:rgba(15,23,42,.10);--hover-shadow:rgba(124,58,237,.14)}
+.dark{--text:#f3f4f6;--bg:#030712;--glass:rgba(255,255,255,.02);--glass-hover:rgba(255,255,255,.04);--glass-border:rgba(255,255,255,.06);--muted:#9ca3af;--title:#ffffff;--hero-from:#ffffff;--glow-a:rgba(168,85,247,.15);--glow-b:rgba(59,130,246,.10);--badge-bg:rgba(168,85,247,.10);--badge-fg:#c084fc;--badge-border:rgba(168,85,247,.15);--link:#3b82f6;--link-hover:#60a5fa;--icon-bg:rgba(255,255,255,.05);--icon-border:rgba(255,255,255,.10);--hover-shadow:rgba(168,85,247,.12)}
+
+body{background-color:var(--bg);color:var(--text);position:relative;overflow-x:hidden}
+body::before{content:'';position:absolute;width:400px;height:400px;background:radial-gradient(circle,var(--glow-a) 0%,transparent 70%);top:-100px;right:-50px;z-index:-1;pointer-events:none}
+body::after{content:'';position:absolute;width:500px;height:500px;background:radial-gradient(circle,var(--glow-b) 0%,transparent 70%);top:400px;left:-150px;z-index:-1;pointer-events:none}
+.dark header.sticky{background:rgba(3,7,18,.72)}
+
+.card{border-radius:1rem;background:var(--glass);border:1px solid var(--glass-border);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+
+.hero-container{max-width:1200px;margin:0 auto;padding:88px 24px 64px;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:40px}
+.hero-content h1{font-size:3.5rem;font-weight:800;line-height:1.2;letter-spacing:-.02em;margin-bottom:20px;background:linear-gradient(135deg,var(--hero-from) 40%,#a855f7 70%,#3b82f6 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
+.hero-content p{font-size:1.2rem;color:var(--muted);line-height:1.6;margin-bottom:36px;max-width:540px}
+.btn-group{display:flex;gap:16px;flex-wrap:wrap}
+.btn-primary{background:linear-gradient(135deg,#a855f7 0%,#3b82f6 100%);color:#fff;padding:14px 28px;border-radius:12px;font-weight:600;text-decoration:none;box-shadow:0 4px 20px rgba(168,85,247,.3);transition:transform .2s,box-shadow .2s;display:inline-block}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(168,85,247,.5)}
+.btn-ghost{padding:14px 28px;border-radius:12px;font-weight:600;text-decoration:none;color:inherit;background:var(--glass);border:1px solid var(--glass-border);transition:border-color .2s,transform .2s;display:inline-block}
+.btn-ghost:hover{border-color:rgba(168,85,247,.5);transform:translateY(-2px)}
+.hero-graphic-panel{display:flex;justify-content:center;align-items:center;position:relative}
+.cyber-orb{width:260px;height:260px;background:linear-gradient(45deg,#a855f7,#3b82f6);border-radius:30% 70% 70% 30%/30% 30% 70% 70%;box-shadow:inset 0 0 50px rgba(255,255,255,.2),0 0 60px rgba(59,130,246,.4);animation:morphOrb 8s ease-in-out infinite alternate}
+@keyframes morphOrb{0%{border-radius:30% 70% 70% 30%/30% 30% 70% 70%;transform:rotate(0deg)}100%{border-radius:70% 30% 30% 70%/70% 40% 60% 30%;transform:rotate(180deg)}}
+@media (max-width:968px){
+  .hero-container{grid-template-columns:1fr;text-align:center;padding-top:56px;gap:28px}
+  .hero-content p{margin:0 auto 28px auto}
+  .btn-group{justify-content:center}
+  .cyber-orb{width:170px;height:170px}
+}
+@media (max-width:480px){.hero-content h1{font-size:2.3rem}.hero-content p{font-size:1.05rem}}
+@media (prefers-reduced-motion:reduce){.cyber-orb{animation:none}.ai-card,.btn-primary,.btn-ghost,.btn{transition:none}}
+
+.section-title{font-size:1.8rem;margin-bottom:8px;font-weight:700;display:flex;align-items:center;gap:12px}
+.section-title span{width:8px;height:24px;background:#a855f7;border-radius:4px;display:inline-block}
+
+.ai-card{background:var(--glass);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid var(--glass-border);border-radius:20px;padding:28px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;transform-style:preserve-3d;perspective:1000px;transition:transform .4s cubic-bezier(.25,1,.5,1),box-shadow .4s ease,border-color .4s ease,background .4s ease}
+@media (hover:hover){
+  .ai-card:hover{transform:translateY(-10px) rotateX(3deg) rotateY(-3deg);background:var(--glass-hover);border-color:rgba(168,85,247,.35);box-shadow:0 20px 40px var(--hover-shadow),0 1px 0 rgba(255,255,255,.1) inset}
+}
+.ai-card:focus-within{border-color:rgba(168,85,247,.5)}
+.card-header{display:flex;align-items:center;gap:16px;margin-bottom:16px;transform:translateZ(20px)}
+.card-icon{font-size:2rem;background:var(--icon-bg);width:52px;height:52px;display:flex;justify-content:center;align-items:center;border-radius:12px;border:1px solid var(--icon-border);flex-shrink:0}
+.card-header h3{font-size:1.35rem;font-weight:700;color:var(--title)}
+.card-body p{color:var(--muted);font-size:.95rem;line-height:1.5;margin-bottom:24px;transform:translateZ(15px)}
+.card-footer{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:auto;transform:translateZ(25px)}
+.badge{background:var(--badge-bg);color:var(--badge-fg);padding:6px 14px;border-radius:8px;font-size:.8rem;font-weight:600;border:1px solid var(--badge-border)}
+.card-link{color:var(--link);text-decoration:none;font-size:.9rem;font-weight:600;display:flex;align-items:center;gap:4px;transition:color .2s;white-space:nowrap}
+.card-link:hover{color:var(--link-hover)}
+</style>
+<style type="text/tailwindcss">
+body{font-family:Inter,system-ui,sans-serif}
+@layer components{
+.btn{@apply px-5 py-2.5 rounded-xl text-white font-semibold text-sm transition inline-flex items-center justify-center gap-2;background:linear-gradient(135deg,#a855f7 0%,#3b82f6 100%);box-shadow:0 4px 20px rgba(168,85,247,.3)}
+.btn:hover{transform:translateY(-1px);box-shadow:0 6px 24px rgba(168,85,247,.5)}
+.inp{@apply w-full p-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-sm outline-none focus:ring-2 focus:ring-blue-500}
+.pill{@apply px-4 py-2 rounded-xl text-sm font-medium whitespace-nowrap transition;background:var(--glass);border:1px solid var(--glass-border)}
+.pill:hover{border-color:rgba(168,85,247,.5)}
+.pill.on{@apply text-white;background:linear-gradient(135deg,#a855f7 0%,#3b82f6 100%);border-color:transparent}
+.wrap{@apply max-w-6xl mx-auto px-4 sm:px-6}
+}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Are these tools really 100% free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. All browser-based tools on this site are completely free with zero usage limits. The AI Directory contains external software, each offering verified free tiers or trial plans."}}, {"@type": "Question", "name": "Do the browser utilities upload my confidential text?", "acceptedAnswer": {"@type": "Answer", "text": "No. All scripts run locally in JavaScript inside your browser tab. Your data is never sent to or stored on our servers."}}, {"@type": "Question", "name": "How are affiliate links used on this site?", "acceptedAnswer": {"@type": "Answer", "text": "Some third-party tools listed in our directory use affiliate links. If you upgrade to a paid plan through our link, we may receive a small commission at no extra cost to you."}}, {"@type": "Question", "name": "How can I submit a new AI tool to your directory?", "acceptedAnswer": {"@type": "Answer", "text": "Use the Contact page to send us your tool's name, URL, and category details."}}, {"@type": "Question", "name": "Kya Text Summarizer Hindi me kaam karta hai?", "acceptedAnswer": {"@type": "Answer", "text": "हाँ। यह हिंदी (देवनागरी) और English दोनों टेक्स्ट पर चलता है और पूर्ण विराम (।) को वाक्य की सीमा मानता है। यह नए वाक्य नहीं लिखता, बल्कि मूल टेक्स्ट से सबसे ज़रूरी वाक्य चुनता है।"}}, {"@type": "Question", "name": "Best free AI text summarizer for Hindi and English documents kaun sa hai?", "acceptedAnswer": {"@type": "Answer", "text": "Hamara browser-based Text Summarizer free hai, login nahi maangta aur Hindi tatha English dono par chalta hai. Bade ya complex documents ke liye aap Directory me दिए गए ChatGPT, Claude ya Gemini bhi try kar sakte hain, jinke free plans me limits ho sakti hain."}}, {"@type": "Question", "name": "Kya main Hindi me prompt bana sakta hoon?", "acceptedAnswer": {"@type": "Answer", "text": "Haan. Prompt Builder me apna idea Hindi ya English me likhiye aur category chuniye; tool use ek structured prompt me badal dega jo aap kisi bhi AI chatbot me paste kar sakte hain."}}]}</script>
+<style>.prose-lite h2{font-size:1.25rem;font-weight:700;margin:1.75rem 0 .5rem}.prose-lite p,.prose-lite li{line-height:1.75;color:rgb(71 85 105)}.dark .prose-lite p,.dark .prose-lite li{color:rgb(203 213 225)}.prose-lite ul{list-style:disc;padding-left:1.4rem;margin:.5rem 0}.prose-lite a{color:#2563eb;text-decoration:underline}.prose-lite p{margin:.6rem 0}</style>
+</head>
+<body class="text-slate-800 dark:text-slate-100 min-h-screen flex flex-col">
+
+<div data-ad="header" class="wrap mt-2 mb-1"></div>
+
+<header class="sticky top-0 z-40 border-b border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900/80 backdrop-blur">
+  <div class="wrap h-16 flex items-center justify-between">
+    <a href="#top" class="flex items-center gap-2 font-extrabold text-lg"><span class="w-9 h-9 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-500 grid place-items-center text-white">✨</span>AITools<span class="text-blue-600">Hub</span></a>
+    <nav class="hidden md:flex gap-6 text-sm font-medium">
+      <a href="#tools" class="hover:text-blue-600">Free Tools</a><a href="#directory" class="hover:text-blue-600">AI Directory</a><a href="#guides" class="hover:text-blue-600">Tool Guides</a><a href="#faq" class="hover:text-blue-600">FAQ</a>
+    </nav>
+    <div class="flex gap-2">
+      <button id="installBtn" class="hidden btn text-xs py-2 px-3 font-medium">📱 Install App</button>
+      <button id="theme" aria-label="Toggle dark mode" class="w-10 h-10 rounded-xl border border-slate-200 dark:border-slate-700">🌓</button>
+      <button id="menuBtn" aria-label="Menu" class="md:hidden w-10 h-10 rounded-xl border border-slate-200 dark:border-slate-700">☰</button>
+    </div>
+  </div>
+  <div id="menu" class="hidden md:hidden wrap pb-3 flex flex-col text-sm font-medium">
+    <a class="py-2" href="#tools">Free Tools</a><a class="py-2" href="#directory">AI Directory</a><a class="py-2" href="#guides">Tool Guides</a><a class="py-2" href="#faq">FAQ</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero-container">
+  <div class="hero-content">
+    <h1>Free Online Tools & Best AI Software Directory</h1>
+    <p>Instant client-side browser utilities plus a curated list of 30+ top artificial intelligence apps. No login or subscription required.</p>
+    <div class="btn-group">
+      <a href="#tools" class="btn-primary">Use Free Tools</a>
+      <a href="#directory" class="btn-ghost">Browse AI Directory (30+)</a>
+    </div>
+  </div>
+  <div class="hero-graphic-panel" aria-hidden="true"><div class="cyber-orb"></div></div>
+</section>
+
+<div data-ad="main-header"></div>
+
+<section id="tools" class="wrap py-10">
+  <h2 class="text-2xl sm:text-3xl font-extrabold text-center">Free Utilities Running Directly in Your Browser</h2>
+  <p class="text-center text-sm text-slate-500 dark:text-slate-400 mt-2 mb-6">100% Secure & Private: Your text is processed locally and never uploaded to any server.</p>
+  <div class="card max-w-3xl mx-auto overflow-hidden">
+    <div id="tabs" class="flex gap-2 overflow-x-auto p-3 border-b border-slate-200 dark:border-slate-700" role="tablist"></div>
+    <div class="p-5 space-y-4">
+      <p id="tDesc" class="text-sm text-slate-500 dark:text-slate-400"></p>
+      <div id="inWrap">
+        <label id="tLabel" for="inp" class="block text-sm font-medium mb-1.5"></label>
+        <textarea id="inp" rows="5" class="inp"></textarea>
+        <div id="cc" class="text-xs text-slate-400 mt-1 text-right">0 characters</div>
+      </div>
+      <div class="flex flex-wrap items-center gap-3">
+        <select id="opt" class="inp !w-auto text-xs" aria-label="Options"></select>
+        <button id="run" class="btn ml-auto"></button>
+      </div>
+      <div id="outBox" class="hidden pt-4 border-t border-slate-200 dark:border-slate-700">
+        <div class="flex justify-between mb-2 text-xs font-semibold text-slate-500">
+          <span>Result</span><button id="copy" class="text-blue-600 dark:text-blue-400 hover:underline">Copy</button>
+        </div>
+        <pre id="out" class="p-4 rounded-xl bg-slate-100 dark:bg-slate-900 text-sm whitespace-pre-wrap break-words max-h-72 overflow-y-auto font-sans"></pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div data-ad="between-tools"></div>
+
+<section id="directory" class="wrap py-12">
+  <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-6">
+    <div>
+      <h2 class="section-title"><span></span>Curated AI Tools Directory</h2>
+      <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Explore over 30 verified AI tools across multiple categories. Free tiers available.</p>
+    </div>
+    <input id="q" type="search" placeholder="Search tools…" aria-label="Search tools" class="inp md:!w-64">
+  </div>
+  <div id="cats" class="flex gap-2 overflow-x-auto pb-3 mb-4"></div>
+  <div id="grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+<article class="ai-card">
+     <div><div class="card-header"><div class="card-icon">💬</div><h3>ChatGPT</h3></div>
+     <div class="card-body"><p>Popular conversational AI assistant for general tasks, writing, analysis, and code.</p></div></div>
+     <div class="card-footer"><span class="badge">Chatbots &amp; Research</span>
+     <a href="https://chatgpt.com" target="_blank" rel="noopener" class="card-link">Visit Site ↗</a></div></article>
+<article class="ai-card">
+     <div><div class="card-header"><div class="card-icon">🧠</div><h3>Claude</h3></div>
+     <div class="card-body"><p>Advanced AI assistant known for handling long context documents and nuanced writing.</p></div></div>
+     <div class="card-footer"><span class="badge">Chatbots &amp; Research</span>
+     <a href="https://claude.ai" target="_blank" rel="noopener" class="card-link">Visit Site ↗</a></div></article>
+<article class="ai-card">
+     <div><div class="card-header"><div class="card-icon">🔷</div><h3>Google Gemini</h3></div>
+     <div class="card-body"><p>Google’s multimodal AI model, deeply integrated with Google Workspace.</p></div></div>
+     <div class="card-footer"><span class="badge">Chatbots &amp; Research</span>
+     <a href="https://gemini.google.com" target="_blank" rel="noopener" class="card-link">Visit Site ↗</a></div></article>
+<article class="ai-card">
+     <div><div class="card-header"><div class="card-icon">🔎</div><h3>Perplexity</h3></div>
+     <div class="card-body"><p>Conversational search engine delivering real-time web results with clear citations.</p></div></div>
+     <div class="card-footer"><span class="badge">Chatbots &amp; Research</span>
+     <a href="https://www.perplexity.ai" target="_blank" rel="noopener" class="card-link">Visit Site ↗</a></div></article>
+<article class="ai-card">
+     <div><div class="card-header"><div class="card-icon">📓</div><h3>NotebookLM</h3></div>
+     <div class="card-body"><p>Personalized AI research assistant that synthesizes notes and generates podcasts.</p></div></div>
+     <div class="card-footer"><span class="badge">Writing &amp; Marketing</span>
+     <a href="https://notebooklm.google.com" target="_blank" rel="noopener" class="card-link">Visit Site ↗</a></div></article>
+<article class="ai-card">
+     <div><div class="card-header"><div class="card-icon">🪟</div><h3>Microsoft Copilot</h3></div>
+     <div class="card-body"><p>AI powered search and creative partner integrated into the Microsoft ecosystem.</p></div></div>
+     <div class="card-footer"><span class="badge">Chatbots &amp; Research</span>
+     <a href="https://copilot.microsoft.com" target="_blank" rel="noopener" class="card-link">Visit Site ↗</a></div></article>
+<article class="ai-card">
+     <div><div class="card-header"><div class="card-icon">🎨</div><h3>Canva</h3></div>
+     <div class="card-body"><p>Graphic design suite with AI image generators, magic edits, and smart layout tools.</p></div></div>
+     <div class="card-footer"><span class="badge">Image &amp; Design</span>
+     <a href="https://www.canva.com" target="_blank" rel="noopener" class="card-link">Visit Site ↗</a></div></article>
+<article class="ai-card">
+     <div><div class="card-header"><div class="card-icon">🖼️</div><h3>Leonardo AI</h3></div>
+     <div class="card-body"><p>High-definition generative AI workspace for game design, product visualizer &amp; art.</p></div></div>
+     <div class="card-footer"><span class="badge">Image &amp; Design</span>
+     <a href="https://leonardo.ai" target="_blank" rel="noopener" class="card-link">Visit Site ↗</a></div></article>
+<article class="ai-card">
+     <div><div class="card-header"><div class="card-icon">🅸</div><h3>Ideogram</h3></div>
+     <div class="card-body"><p>Leading generative image tool with industry-best typography and text rendering.</p></div></div>
+     <div class="card-footer"><span class="badge">Image &amp; Design</span>
+     <a href="https://ideogram.ai" target="_blank" rel="noopener" class="card-link">Visit Site ↗</a></div></article>
+<article class="ai-card">
+     <div><div class="card-header"><div class="card-icon">✍️</div><h3>Jasper AI</h3></div>
+     <div class="card-body"><p>Enterprise-grade AI copilot designed for marketing teams, blogs, and copywriting.</p></div></div>
+     <div class="card-footer"><span class="badge">Writing &amp; Marketing</span>
+     <a href="https://www.jasper.ai" target="_blank" rel="noopener" class="card-link">Visit Site ↗</a></div></article>
+<article class="ai-card">
+     <div><div class="card-header"><div class="card-icon">📝</div><h3>Copy.ai</h3></div>
+     <div class="card-body"><p>AI content generator for sales, automated go-to-market copy, and social posts.</p></div></div>
+     <div class="card-footer"><span class="badge">Writing &amp; Marketing</span>
+     <a href="https://www.copy.ai" target="_blank" rel="noopener" class="card-link">Visit Site ↗</a></div></article>
+<article class="ai-card">
+     <div><div class="card-header"><div class="card-icon">✅</div><h3>Grammarly</h3></div>
+     <div class="card-body"><p>Real-time grammar, clarity, tone enhancement, and AI composition assistant.</p></div></div>
+     <div class="card-footer"><span class="badge">Writing &amp; Marketing</span>
+     <a href="https://www.grammarly.com" target="_blank" rel="noopener" class="card-link">Visit Site ↗</a></div></article>
+<article class="ai-card">
+     <div><div class="card-header"><div class="card-icon">📈</div><h3>Surfer SEO</h3></div>
+     <div class="card-body"><p>AI writing and SEO audit platform to rank articles higher on Google Search.</p></div></div>
+     <div class="card-footer"><span class="badge">Writing &amp; Marketing</span>
+     <a href="https://surferseo.com" target="_blank" rel="noopener" class="card-link">Visit Site ↗</a></div></article>
+<article class="ai-card">
+     <div><div class="card-header"><div class="card-icon">🤗</div><h3>Hugging Face</h3></div>
+     <div class="card-body"><p>Open source platform hosting thousands of open weights models, datasets, and apps.</p></div></div>
+     <div class="card-footer"><span class="badge">Coding &amp; Dev</span>
+     <a href="https://huggingface.co" target="_blank" rel="noopener" class="card-link">Visit Site ↗</a></div></article>
+<article class="ai-card">
+     <div><div class="card-header"><div class="card-icon">👨‍💻</div><h3>GitHub Copilot</h3></div>
+     <div class="card-body"><p>AI pair programmer offering inline code autocomplete and context awareness.</p></div></div>
+     <div class="card-footer"><span class="badge">Coding &amp; Dev</span>
+     <a href="https://github.com/features/copilot" target="_blank" rel="noopener" class="card-link">Visit Site ↗</a></div></article>
+<article class="ai-card">
+     <div><div class="card-header"><div class="card-icon">⚡</div><h3>Replit Ghostwriter</h3></div>
+     <div class="card-body"><p>In-browser collaborative IDE with context-aware code generation and debugging.</p></div></div>
+     <div class="card-footer"><span class="badge">Coding &amp; Dev</span>
+     <a href="https://replit.com" target="_blank" rel="noopener" class="card-link">Visit Site ↗</a></div></article>
+<article class="ai-card">
+     <div><div class="card-header"><div class="card-icon">💻</div><h3>Cursor AI</h3></div>
+     <div class="card-body"><p>AI-native code editor built on VS Code for multi-file codebase indexing and edits.</p></div></div>
+     <div class="card-footer"><span class="badge">Coding &amp; Dev</span>
+     <a href="https://www.cursor.com" target="_blank" rel="noopener" class="card-link">Visit Site ↗</a></div></article>
+<article class="ai-card">
+     <div><div class="card-header"><div class="card-icon">📊</div><h3>Gamma</h3></div>
+     <div class="card-body"><p>AI presentation and web page builder that converts outline drafts instantly.</p></div></div>
+     <div class="card-footer"><span class="badge">Writing &amp; Marketing</span>
+     <a href="https://gamma.app" target="_blank" rel="noopener" class="card-link">Visit Site ↗</a></div></article>
+<article class="ai-card">
+     <div><div class="card-header"><div class="card-icon">🎙️</div><h3>ElevenLabs</h3></div>
+     <div class="card-body"><p>Ultra-realistic text-to-speech, voice cloning, and audio dubbing in 29+ languages.</p></div></div>
+     <div class="card-footer"><span class="badge">Audio &amp; Video</span>
+     <a href="https://elevenlabs.io" target="_blank" rel="noopener" class="card-link">Visit Site ↗</a></div></article>
+<article class="ai-card">
+     <div><div class="card-header"><div class="card-icon">🎵</div><h3>Suno AI</h3></div>
+     <div class="card-body"><p>Generative AI tool that crafts full musical tracks with vocals from text prompts.</p></div></div>
+     <div class="card-footer"><span class="badge">Audio &amp; Video</span>
+     <a href="https://suno.com" target="_blank" rel="noopener" class="card-link">Visit Site ↗</a></div></article>
+<article class="ai-card">
+     <div><div class="card-header"><div class="card-icon">🎬</div><h3>Descript</h3></div>
+     <div class="card-body"><p>AI video &amp; podcast editor that lets you edit media by simply editing the transcript.</p></div></div>
+     <div class="card-footer"><span class="badge">Audio &amp; Video</span>
+     <a href="https://www.descript.com" target="_blank" rel="noopener" class="card-link">Visit Site ↗</a></div></article>
+<article class="ai-card">
+     <div><div class="card-header"><div class="card-icon">✂️</div><h3>Remove.bg</h3></div>
+     <div class="card-body"><p>Instant AI automated background removal for high-res images and products.</p></div></div>
+     <div class="card-footer"><span class="badge">Image &amp; Design</span>
+     <a href="https://www.remove.bg" target="_blank" rel="noopener" class="card-link">Visit Site ↗</a></div></article>
+<article class="ai-card">
+     <div><div class="card-header"><div class="card-icon">📷</div><h3>Clipdrop</h3></div>
+     <div class="card-body"><p>Suite of AI image editing apps including cleanup, relighting, and upscaling.</p></div></div>
+     <div class="card-footer"><span class="badge">Image &amp; Design</span>
+     <a href="https://clipdrop.co" target="_blank" rel="noopener" class="card-link">Visit Site ↗</a></div></article>
+<article class="ai-card">
+     <div><div class="card-header"><div class="card-icon">📹</div><h3>Runway Gen-2</h3></div>
+     <div class="card-body"><p>Generative video model that creates dynamic video clips from text or static images.</p></div></div>
+     <div class="card-footer"><span class="badge">Audio &amp; Video</span>
+     <a href="https://runwayml.com" target="_blank" rel="noopener" class="card-link">Visit Site ↗</a></div></article>
+<article class="ai-card">
+     <div><div class="card-header"><div class="card-icon">🎥</div><h3>Luma Dream Machine</h3></div>
+     <div class="card-body"><p>High-speed AI video generation engine with hyper-realistic movement and detail.</p></div></div>
+     <div class="card-footer"><span class="badge">Audio &amp; Video</span>
+     <a href="https://lumalabs.ai" target="_blank" rel="noopener" class="card-link">Visit Site ↗</a></div></article>
+<article class="ai-card">
+     <div><div class="card-header"><div class="card-icon">📄</div><h3>Kickresume</h3></div>
+     <div class="card-body"><p>AI resume and cover letter builder with customizable templates and ATS checks.</p></div></div>
+     <div class="card-footer"><span class="badge">Resume &amp; Jobs</span>
+     <a href="https://www.kickresume.com" target="_blank" rel="noopener" class="card-link">Visit Site ↗</a></div></article>
+<article class="ai-card">
+     <div><div class="card-header"><div class="card-icon">💼</div><h3>Resumaker.ai</h3></div>
+     <div class="card-body"><p>Smart online resume builder with automated phrasing and career path tips.</p></div></div>
+     <div class="card-footer"><span class="badge">Resume &amp; Jobs</span>
+     <a href="https://resumaker.ai" target="_blank" rel="noopener" class="card-link">Visit Site ↗</a></div></article>
+<article class="ai-card">
+     <div><div class="card-header"><div class="card-icon">🎯</div><h3>Teal Resume Builder</h3></div>
+     <div class="card-body"><p>Career growth platform with integrated ATS resume match tool and job tracker.</p></div></div>
+     <div class="card-footer"><span class="badge">Resume &amp; Jobs</span>
+     <a href="https://www.tealhq.com" target="_blank" rel="noopener" class="card-link">Visit Site ↗</a></div></article>
+<article class="ai-card">
+     <div><div class="card-header"><div class="card-icon">🛍️</div><h3>Photoroom</h3></div>
+     <div class="card-body"><p>E-commerce studio photo editing app with automated background replace.</p></div></div>
+     <div class="card-footer"><span class="badge">Image &amp; Design</span>
+     <a href="https://www.photoroom.com" target="_blank" rel="noopener" class="card-link">Visit Site ↗</a></div></article>
+<article class="ai-card">
+     <div><div class="card-header"><div class="card-icon">🌐</div><h3>DeepL Translator</h3></div>
+     <div class="card-body"><p>Nuanced AI language translation tool powered by neural network algorithms.</p></div></div>
+     <div class="card-footer"><span class="badge">Writing &amp; Marketing</span>
+     <a href="https://www.deepl.com" target="_blank" rel="noopener" class="card-link">Visit Site ↗</a></div></article>
+<article class="ai-card">
+     <div><div class="card-header"><div class="card-icon">🎨</div><h3>v0 by Vercel</h3></div>
+     <div class="card-body"><p>Generative UI tool that turns natural language descriptions into Tailwind React code.</p></div></div>
+     <div class="card-footer"><span class="badge">Coding &amp; Dev</span>
+     <a href="https://v0.dev" target="_blank" rel="noopener" class="card-link">Visit Site ↗</a></div></article>
+</div>
+  <p id="none" class="hidden text-center py-12 text-slate-500" role="status"></p>
+  <p class="text-xs text-slate-400 mt-5">Disclosure: Some outbound links are affiliate links. We may earn an affiliate commission when you make a purchase through our links at no extra cost to you.</p>
+</section>
+
+<section class="wrap pb-2"><a href="chatgpt-vs-claude.html" class="card p-5 block hover:border-purple-400 transition"><span class="text-xs font-semibold text-purple-500">COMPARISON</span><h3 class="text-lg font-bold mt-1">ChatGPT vs Claude: plans, pricing and limits compared →</h3><p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Free tiers, $20 plans, power tiers and team pricing side by side, with the date each figure was verified.</p></a></section>
+
+<div data-ad="after-directory"></div>
+
+<section id="guides" class="wrap py-12 border-t border-slate-200 dark:border-slate-800">
+  <h2 class="text-2xl sm:text-3xl font-extrabold text-center mb-8">Comprehensive Guides & How to Use Our Free Tools</h2>
+  
+  <div class="grid md:grid-cols-2 gap-6">
+    <article class="card p-6">
+      <h3 class="text-xl font-bold mb-2">How to Use the AI Prompt Builder Effectively</h3>
+      <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+        Prompt engineering is key to getting the best results from large language models like ChatGPT, Claude, and Gemini. Our free AI Prompt Builder optimizes your simple text ideas into structured prompts. Selecting the right category (Writing, Image Generation, Coding, or Business) formats your request with clear instructions, roles, context, tone, and constraints. This guarantees accurate, high-quality AI answers on the first try without wasting your time or API tokens.
+      </p>
+    </article>
+
+    <article class="card p-6">
+      <h3 class="text-xl font-bold mb-2">Why Use Our Free Text Summarizer?</h3>
+      <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+        Reading through long articles, research papers, or business reports can be time-consuming. Our client-side Text Summarizer uses frequency scoring algorithms to extract core bullet points instantly. Unlike online tools that send data to external cloud servers, our algorithm processes all text locally inside your web browser. This offers complete data privacy and security for your documents, works offline, and supports multi-lingual texts including English and Hindi.
+      </p>
+    </article>
+
+    <article class="card p-6">
+      <h3 class="text-xl font-bold mb-2">Comprehensive Word Counter & Reading Time Estimator</h3>
+      <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+        Maintaining proper text length is essential for SEO writing, social media posts, essays, and academic papers. Our Word Counter accurately calculates total word counts, character counts (with and without spaces), paragraph breaks, sentence limits, and estimated reading times (based on average human reading speeds of 200 words per minute). Use this lightweight browser utility to optimize copy for blog posts, meta descriptions, and Twitter/X character restrictions.
+      </p>
+    </article>
+
+    <article class="card p-6">
+      <h3 class="text-xl font-bold mb-2">Secure JSON Formatter & Offline Password Generator</h3>
+      <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+        Developers and designers need quick, reliable data tools. Our JSON Formatter prettifies messy JSON or minifies it for production deployments with instant syntax checking. Paired with our Password Generator—which leverages the browser's native Cryptographically Secure Pseudorandom Number Generator (Crypto API)—you can create highly complex, uncrackable passwords securely without sending cryptographic secrets over the internet.
+      </p>
+    </article>
+
+    <article class="card p-6 md:col-span-2" lang="hi">
+      <h3 class="text-xl font-bold mb-2">Hindi aur English documents ke liye free AI text summarizer</h3>
+      <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+        अगर आपको लंबे लेख, नोट्स या रिपोर्ट का सार जल्दी चाहिए, तो हमारा Text Summarizer हिंदी और English दोनों में काम करता है। यह पूरे टेक्स्ट में से सबसे ज़रूरी वाक्य चुनता है, और हिंदी में पूर्ण विराम (।) को वाक्य की सीमा मानता है। पूरा प्रोसेस आपके ब्राउज़र में ही होता है, इसलिए आपका टेक्स्ट किसी सर्वर पर नहीं जाता। यह स्टूडेंट्स, ब्लॉगर्स और ऑफिस के काम के लिए उपयोगी है। ध्यान रखें कि यह टूल चुने हुए वाक्य दिखाता है, नए वाक्य नहीं लिखता, इसलिए बहुत छोटे टेक्स्ट पर नतीजा सीमित रहेगा। Prompt Builder से आप हिंदी में भी अपना आइडिया ChatGPT, Claude या Gemini के लिए एक साफ़ prompt में बदल सकते हैं।
+      </p>
+    </article>
+  </div>
+</section>
+
+<section class="wrap py-10">
+  <div class="card max-w-3xl mx-auto p-6 text-center">
+    <h2 class="text-xl font-extrabold">Get New Free AI Tools & Weekly Updates</h2>
+    <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">One short email a week. No spam. Unsubscribe anytime.</p>
+    <form id="nl" method="post" class="mt-4 flex flex-col sm:flex-row gap-3">
+      <input type="email" name="email" required placeholder="you@example.com" aria-label="Email address" class="inp">
+      <button class="btn">Subscribe</button>
+    </form>
+    
+    <div class="mt-6 border-t border-slate-200 dark:border-slate-700 pt-4 flex flex-col items-center justify-center gap-2">
+      <p class="text-xs text-slate-500">Enjoying our free tools? Help keep the site serverless & free:</p>
+      <a id="support" href="https://www.buymeacoffee.com" target="_blank" rel="noopener" class="pill border-amber-400 bg-amber-50 dark:bg-amber-950/30 text-amber-700 dark:text-amber-300 hover:bg-amber-100 font-semibold text-sm flex items-center gap-2">
+        <span>☕</span> Support This Site
+      </a>
+    </div>
+  </div>
+</section>
+
+<div data-ad="footer"></div>
+
+<section id="faq" class="wrap max-w-3xl py-12">
+  <h2 class="text-2xl sm:text-3xl font-extrabold text-center mb-6">Frequently Asked Questions</h2>
+  <div class="space-y-3">
+    <details class="card p-4"><summary class="font-semibold cursor-pointer">Are these tools really 100% free?</summary><p class="text-sm mt-2 text-slate-600 dark:text-slate-300">Yes. All browser-based tools on this site are completely free with zero usage limits. The AI Directory contains external software, each offering verified free tiers or trial plans.</p></details>
+    <details class="card p-4"><summary class="font-semibold cursor-pointer">Do the browser utilities upload my confidential text?</summary><p class="text-sm mt-2 text-slate-600 dark:text-slate-300">No. All scripts run locally in JavaScript inside your browser tab. Your data is never sent to or stored on our servers.</p></details>
+    <details class="card p-4"><summary class="font-semibold cursor-pointer">How are affiliate links used on this site?</summary><p class="text-sm mt-2 text-slate-600 dark:text-slate-300">Some third-party tools listed in our directory use affiliate links. If you upgrade to a paid plan through our link, we may receive a small commission at no extra cost to you.</p></details>
+    <details class="card p-4"><summary class="font-semibold cursor-pointer">How can I submit a new AI tool to your directory?</summary><p class="text-sm mt-2 text-slate-600 dark:text-slate-300">Use the <a class="underline text-blue-600" href="contact.html">Contact page</a> to send us your tool's name, URL, and category details.</p></details>
+
+    <details class="card p-4"><summary class="font-semibold cursor-pointer">Kya Text Summarizer Hindi me kaam karta hai?</summary><p class="text-sm mt-2 text-slate-600 dark:text-slate-300">हाँ। यह हिंदी (देवनागरी) और English दोनों टेक्स्ट पर चलता है और पूर्ण विराम (।) को वाक्य की सीमा मानता है। यह नए वाक्य नहीं लिखता, बल्कि मूल टेक्स्ट से सबसे ज़रूरी वाक्य चुनता है।</p></details>
+    <details class="card p-4"><summary class="font-semibold cursor-pointer">Best free AI text summarizer for Hindi and English documents kaun sa hai?</summary><p class="text-sm mt-2 text-slate-600 dark:text-slate-300">Hamara browser-based Text Summarizer free hai, login nahi maangta aur Hindi tatha English dono par chalta hai. Bade ya complex documents ke liye aap Directory me दिए गए ChatGPT, Claude ya Gemini bhi try kar sakte hain, jinke free plans me limits ho sakti hain.</p></details>
+    <details class="card p-4"><summary class="font-semibold cursor-pointer">Kya main Hindi me prompt bana sakta hoon?</summary><p class="text-sm mt-2 text-slate-600 dark:text-slate-300">Haan. Prompt Builder me apna idea Hindi ya English me likhiye aur category chuniye; tool use ek structured prompt me badal dega jo aap kisi bhi AI chatbot me paste kar sakte hain.</p></details>
+  </div>
+</section>
+</main>
+
+<footer class="mt-auto border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 py-8">
+  <div class="wrap flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-500 dark:text-slate-400">
+    <span>© <span id="yr"></span> Free AI Tools Hub. All rights reserved.</span>
+    <div class="flex gap-5">
+      <a href="about.html" class="hover:text-blue-600">About</a><a href="privacy.html" class="hover:text-blue-600">Privacy Policy</a><a href="terms.html" class="hover:text-blue-600">Terms</a><a href="contact.html" class="hover:text-blue-600">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<div id="cookie" class="hidden fixed bottom-0 inset-x-0 z-50 p-4">
+  <div class="card max-w-2xl mx-auto p-4 flex flex-col sm:flex-row gap-3 items-center shadow-xl text-sm">
+    <p class="flex-1">We use cookies to personalize ad content and analyze traffic in compliance with GDPR and Google AdSense policies. Read our <a href="privacy.html" class="underline text-blue-600">Privacy Policy</a>.</p>
+    <div class="flex gap-2"><button id="ckNo" class="pill">Decline</button><button id="ckYes" class="btn">Accept</button></div>
+  </div>
+</div>
+
+<div id="toast" class="fixed bottom-5 left-1/2 -translate-x-1/2 z-50 px-4 py-2.5 rounded-xl bg-slate-900 text-white text-sm shadow-xl opacity-0 pointer-events-none transition-opacity"></div>
+
+<script>
+const CONFIG={
+  adsenseClient:'',
+  adSlot:'',
+  newsletterAction:'',
+  supportUrl:'https://www.buymeacoffee.com',
+  email:'contact@aitoolshub.com',
+  siteName:'Free AI Tools Hub'
+};
+
+const AFFILIATE={
+  'Jasper AI': '',
+  'Copy.ai': '',
+  'Surfer SEO': '',
+  'Grammarly': '',
+  'Kickresume': '',
+  'Teal Resume Builder': '',
+  'Canva': '',
+  'Leonardo AI': ''
+};
+const affLink=n=>{const a=(AFFILIATE[n]||'').trim();return /^https?:\/\//i.test(a)&&!/your_/i.test(a)?a:''};
+
+const $=id=>document.getElementById(id);
+const toast=m=>{const t=$('toast');t.textContent=m;t.style.opacity=1;clearTimeout(t._t);t._t=setTimeout(()=>t.style.opacity=0,2500)};
+const words=t=>t.match(/[\w\u0900-\u097f']+/g)||[];
+
+const TOOLS={
+ prompt:{n:'Prompt Builder',d:'Turn a short idea into a clear, structured prompt you can paste into any AI chatbot or image generator.',l:'Your idea',p:'e.g. a launch plan for my online store',b:'Build prompt',
+  o:[['writing','Writing'],['image','Image generation'],['code','Coding'],['business','Business']],
+  run:(t,o)=>({
+   writing:`Act as an expert writer and editor.\n\nTask: ${t}\nAudience: [who will read this]\nTone: clear, friendly, professional\nLength: [e.g. 500 words]\nStructure: hook, key points, conclusion\nRules: simple language, concrete examples, no clichés\n\nIf anything is unclear, ask me up to 3 questions before you start.`,
+   image:`${t}, highly detailed, natural lighting, sharp focus, balanced composition, 35mm lens, shallow depth of field, rich colors, professional quality\n\nNegative: blurry, distorted hands, extra limbs, watermark, text\nAspect ratio: 16:9`,
+   code:`Act as a senior software engineer.\n\nTask: ${t}\nLanguage / framework: [e.g. Python 3.12]\nRequirements: clean, commented, handles errors and edge cases\nOutput: 1) short plan 2) full code 3) how to run it 4) simple tests\n\nExplain any trade-offs you made.`,
+   business:`Act as an experienced business consultant.\n\nGoal: ${t}\nBusiness context: [industry, size, budget]\nOutput: a step-by-step action plan with priorities, timeline, risks and success metrics\nFormat: short headings and bullet points\n\nEnd with the 3 most important next actions.`
+  })[o]},
+ summarize:{n:'Text Summarizer',d:'Pulls out the most important sentences from a long text. Works with English and Hindi.',l:'Paste your text',p:'Paste an article or essay here…',b:'Summarize',
+  o:[['3','3 sentences'],['5','5 sentences'],['7','7 sentences']],
+  run:(t,o)=>{const n=+o,s=(t.match(/[^.!?।\n]+[.!?।]*/g)||[]).map(x=>x.trim()).filter(x=>x.length>25);
+   if(s.length<=n)return s.length?s.join(' '):'The text is too short to summarize. Paste at least a few sentences.';
+   const stop=new Set('the a an and or of to in is it that for on with as was are this by be at from which have has not but you your we they their will can'.split(' ').concat('में और का की के है हैं को से पर यह वह एक था थे भी कि तो हो ने कर इस उस जो'.split(' '))),f={};
+   words(t.toLowerCase()).forEach(w=>{if(w.length>2&&!stop.has(w))f[w]=(f[w]||0)+1});
+   const sc=s.map((x,i)=>[i,words(x.toLowerCase()).reduce((a,w)=>a+(f[w]||0),0)/Math.sqrt(words(x).length||1)]);
+   return sc.sort((a,b)=>b[1]-a[1]).slice(0,n).map(x=>x[0]).sort((a,b)=>a-b).map(i=>'• '+s[i]).join('\n')}},
+ count:{n:'Word Counter',d:'Count words, characters, sentences and estimate reading time.',l:'Paste your text',p:'Type or paste text…',b:'Count',
+  run:t=>{const w=words(t).length;return `Words: ${w}\nCharacters: ${t.length}\nCharacters (no spaces): ${t.replace(/\s/g,'').length}\nSentences: ${(t.match(/[.!?।]+/g)||[]).length}\nParagraphs: ${t.split(/\n\s*\n/).filter(x=>x.trim()).length}\nReading time: about ${Math.max(1,Math.round(w/200))} min`}},
+ case:{n:'Case Converter',d:'Change text to uppercase, lowercase, title case, sentence case or a URL slug.',l:'Your text',p:'Type or paste text…',b:'Convert',
+  o:[['title','Title Case'],['upper','UPPERCASE'],['lower','lowercase'],['sentence','Sentence case'],['slug','url-slug']],
+  run:(t,o)=>({upper:t.toUpperCase(),lower:t.toLowerCase(),
+   title:t.toLowerCase().replace(/(^|\s)(\S)/g,(m,a,b)=>a+b.toUpperCase()),
+   sentence:t.toLowerCase().replace(/(^\s*|[.!?]\s+)(\S)/g,(m,a,b)=>a+b.toUpperCase()),
+   slug:t.toLowerCase().trim().replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'')})[o]},
+ json:{n:'JSON Formatter',d:'Validate, prettify or minify JSON. Errors are shown clearly.',l:'Paste JSON',p:'{"name":"Hub","free":true}',b:'Format',
+  o:[['pretty','Prettify'],['min','Minify']],
+  run:(t,o)=>{try{const j=JSON.parse(t);return o==='min'?JSON.stringify(j):JSON.stringify(j,null,2)}catch(e){return 'Invalid JSON: '+e.message}}},
+ pass:{n:'Password Generator',d:'Create strong random passwords using your browser’s secure random generator.',noInput:true,b:'Generate',
+  o:[['12','12 characters'],['16','16 characters'],['24','24 characters'],['32','32 characters']],
+  run:(t,o)=>{const c='ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz23456789!@#$%^&*-_?',n=+o;
+   return [1,2,3].map(()=>{const a=new Uint32Array(n);crypto.getRandomValues(a);return [...a].map(x=>c[x%c.length]).join('')}).join('\n')}}
+};
+let cur='prompt';
+function pick(k){
+  cur=k;const T=TOOLS[k];
+  document.querySelectorAll('#tabs button').forEach(b=>{const on=b.dataset.k===k;b.classList.toggle('on',on);b.setAttribute('aria-selected',on)});
+  $('tDesc').textContent=T.d;$('run').textContent=T.b;
+  $('inWrap').style.display=T.noInput?'none':'block';
+  if(!T.noInput){$('tLabel').textContent=T.l;$('inp').placeholder=T.p||''}
+  const s=$('opt');s.innerHTML='';s.style.display=T.o?'block':'none';
+  (T.o||[]).forEach(([v,l])=>{const o=document.createElement('option');o.value=v;o.textContent=l;s.appendChild(o)});
+  $('outBox').classList.add('hidden');
+}
+$('tabs').innerHTML=Object.entries(TOOLS).map(([k,t])=>`<button data-k="${k}" role="tab" class="pill">${t.n}</button>`).join('');
+$('tabs').onclick=e=>{const b=e.target.closest('button');if(b)pick(b.dataset.k)};
+$('inp').oninput=e=>$('cc').textContent=e.target.value.length+' characters';
+$('run').onclick=()=>{
+  const T=TOOLS[cur],v=$('inp').value.trim();
+  if(!T.noInput&&!v)return toast('Please enter some text first.');
+  $('out').textContent=T.run(v,$('opt').value);$('outBox').classList.remove('hidden');$('copy').textContent='Copy';
+};
+$('copy').onclick=async()=>{
+  const t=$('out').textContent;
+  try{await navigator.clipboard.writeText(t)}catch(e){const a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();document.execCommand('copy');a.remove()}
+  $('copy').textContent='Copied!';toast('Copied to clipboard');
+};
+
+const CATS={
+  all:'All Tools',
+  chat:'Chatbots & Research',
+  image:'Image & Design',
+  code:'Coding & Dev',
+  write:'Writing & Marketing',
+  audio:'Audio & Video',
+  resume:'Resume & Jobs'
+};
+
+const DIR=[
+  ['ChatGPT','https://chatgpt.com','chat','Popular conversational AI assistant for general tasks, writing, analysis, and code.','💬'],
+  ['Claude','https://claude.ai','chat','Advanced AI assistant known for handling long context documents and nuanced writing.','🧠'],
+  ['Google Gemini','https://gemini.google.com','chat','Google’s multimodal AI model, deeply integrated with Google Workspace.','🔷'],
+  ['Perplexity','https://www.perplexity.ai','chat','Conversational search engine delivering real-time web results with clear citations.','🔎'],
+  ['NotebookLM','https://notebooklm.google.com','write','Personalized AI research assistant that synthesizes notes and generates podcasts.','📓'],
+  ['Microsoft Copilot','https://copilot.microsoft.com','chat','AI powered search and creative partner integrated into the Microsoft ecosystem.','🪟'],
+  ['Canva','https://www.canva.com','image','Graphic design suite with AI image generators, magic edits, and smart layout tools.','🎨'],
+  ['Leonardo AI','https://leonardo.ai','image','High-definition generative AI workspace for game design, product visualizer & art.','🖼️'],
+  ['Ideogram','https://ideogram.ai','image','Leading generative image tool with industry-best typography and text rendering.','🅸'],
+  ['Jasper AI','https://www.jasper.ai','write','Enterprise-grade AI copilot designed for marketing teams, blogs, and copywriting.','✍️'],
+  ['Copy.ai','https://www.copy.ai','write','AI content generator for sales, automated go-to-market copy, and social posts.','📝'],
+  ['Grammarly','https://www.grammarly.com','write','Real-time grammar, clarity, tone enhancement, and AI composition assistant.','✅'],
+  ['Surfer SEO','https://surferseo.com','write','AI writing and SEO audit platform to rank articles higher on Google Search.','📈'],
+  ['Hugging Face','https://huggingface.co','code','Open source platform hosting thousands of open weights models, datasets, and apps.','🤗'],
+  ['GitHub Copilot','https://github.com/features/copilot','code','AI pair programmer offering inline code autocomplete and context awareness.','👨‍💻'],
+  ['Replit Ghostwriter','https://replit.com','code','In-browser collaborative IDE with context-aware code generation and debugging.','⚡'],
+  ['Cursor AI','https://www.cursor.com','code','AI-native code editor built on VS Code for multi-file codebase indexing and edits.','💻'],
+  ['Gamma','https://gamma.app','write','AI presentation and web page builder that converts outline drafts instantly.','📊'],
+  ['ElevenLabs','https://elevenlabs.io','audio','Ultra-realistic text-to-speech, voice cloning, and audio dubbing in 29+ languages.','🎙️'],
+  ['Suno AI','https://suno.com','audio','Generative AI tool that crafts full musical tracks with vocals from text prompts.','🎵'],
+  ['Descript','https://www.descript.com','audio','AI video & podcast editor that lets you edit media by simply editing the transcript.','🎬'],
+  ['Remove.bg','https://www.remove.bg','image','Instant AI automated background removal for high-res images and products.','✂️'],
+  ['Clipdrop','https://clipdrop.co','image','Suite of AI image editing apps including cleanup, relighting, and upscaling.','📷'],
+  ['Runway Gen-2','https://runwayml.com','audio','Generative video model that creates dynamic video clips from text or static images.','📹'],
+  ['Luma Dream Machine','https://lumalabs.ai','audio','High-speed AI video generation engine with hyper-realistic movement and detail.','🎥'],
+  ['Kickresume','https://www.kickresume.com','resume','AI resume and cover letter builder with customizable templates and ATS checks.','📄'],
+  ['Resumaker.ai','https://resumaker.ai','resume','Smart online resume builder with automated phrasing and career path tips.','💼'],
+  ['Teal Resume Builder','https://www.tealhq.com','resume','Career growth platform with integrated ATS resume match tool and job tracker.','🎯'],
+  ['Photoroom','https://www.photoroom.com','image','E-commerce studio photo editing app with automated background replace.','🛍️'],
+  ['DeepL Translator','https://www.deepl.com','write','Nuanced AI language translation tool powered by neural network algorithms.','🌐'],
+  ['v0 by Vercel','https://v0.dev','code','Generative UI tool that turns natural language descriptions into Tailwind React code.','🎨']
+];
+
+let cat='all';
+$('cats').innerHTML=Object.entries(CATS).map(([k,v])=>`<button data-c="${k}" class="pill${k==='all'?' on':''}">${v}</button>`).join('');
+$('cats').onclick=e=>{const b=e.target.closest('button');if(!b)return;cat=b.dataset.c;document.querySelectorAll('#cats button').forEach(x=>x.classList.toggle('on',x===b));drawDir()};
+$('q').oninput=drawDir;
+
+function drawDir(){
+  const q=$('q').value.toLowerCase();
+  const L=DIR.filter(t=>(cat==='all'||t[2]===cat)&&(t[0]+t[3]).toLowerCase().includes(q));
+  $('none').textContent=L.length?'':'No tools match your search. Clear the search box or pick "All Tools" to see the full directory.';
+  $('none').classList.toggle('hidden',L.length>0);
+  $('grid').innerHTML=L.map(t=>{
+    const aff=affLink(t[0]);
+    const targetUrl=aff||t[1];
+    return `<article class="ai-card">
+     <div><div class="card-header"><div class="card-icon">${t[4]}</div><h3>${t[0]}</h3></div>
+     <div class="card-body"><p>${t[3]}</p></div></div>
+     <div class="card-footer"><span class="badge">${CATS[t[2]]}</span>
+     <a href="${targetUrl}" target="_blank" rel="${aff?'sponsored nofollow ':''}noopener" class="card-link">Visit Site ↗</a></div></article>`
+  }).join('');
+  
+  if(cat !== 'all'){
+    document.title = `${CATS[cat]} - Best Free AI Tools Directory ${new Date().getFullYear()}`;
+  } else {
+    document.title = "Free AI Tools Hub – Best Free Online Tools & AI Directory 2026";
+  }
+}
+
+let consent;try{consent=localStorage.getItem('ck')}catch(e){}
+
+function loadAds(){
+  if(!CONFIG.adsenseClient||consent!=='yes') return false;
+  const s=document.createElement('script');
+  s.async=true;
+  s.crossOrigin='anonymous';
+  s.src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client='+CONFIG.adsenseClient;
+  document.head.appendChild(s);
+  return true;
+}
+
+const adsOn=loadAds();
+
+function fillAds(){
+document.querySelectorAll('[data-ad]').forEach(el=>{
+  if(el.dataset.filled)return;
+  el.className='wrap my-6';
+  if(consent==='yes'&&CONFIG.adsenseClient&&CONFIG.adSlot){
+    el.innerHTML=`<ins class="adsbygoogle" style="display:block" data-ad-client="${CONFIG.adsenseClient}" data-ad-slot="${CONFIG.adSlot}" data-ad-format="auto" data-full-width-responsive="true"></ins>`;
+    try{(window.adsbygoogle=window.adsbygoogle||[]).push({})}catch(e){}
+    el.dataset.filled='1';
+  }else{
+    el.innerHTML='';el.classList.remove('my-6');
+  }
+});
+}
+fillAds();
+
+if(CONFIG.newsletterAction)$('nl').action=CONFIG.newsletterAction;
+$('nl').onsubmit=e=>{if(!CONFIG.newsletterAction){e.preventDefault();toast('Newsletter subscription saved.')}};
+if(CONFIG.supportUrl){const a=$('support');a.href=CONFIG.supportUrl;}
+
+if(!consent)$('cookie').classList.remove('hidden');
+
+const setCk=v=>{
+  try{localStorage.setItem('ck',v)}catch(e){}
+  $('cookie').classList.add('hidden');
+  consent=v;
+  if(v==='yes'&&CONFIG.adsenseClient){
+    if(loadAds())fillAds();
+  }
+};
+
+$('ckYes').onclick=()=>setCk('yes');
+$('ckNo').onclick=()=>setCk('no');
+
+$('theme').onclick=()=>{const d=document.documentElement.classList.toggle('dark');try{localStorage.theme=d?'dark':'light'}catch(e){}};
+$('menuBtn').onclick=()=>$('menu').classList.toggle('hidden');
+$('menu').onclick=()=>$('menu').classList.add('hidden');
+$('yr').textContent=new Date().getFullYear();
+
+/* ---------- PWA Install Prompt Handler ---------- */
+let deferredPrompt;
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  const btn = $('installBtn');
+  if (btn) {
+    btn.classList.remove('hidden');
+    btn.onclick = async () => {
+      btn.classList.add('hidden');
+      deferredPrompt.prompt();
+      const { outcome } = await deferredPrompt.userChoice;
+      if (outcome === 'accepted') {
+        toast('App installation started!');
+      }
+      deferredPrompt = null;
+    };
+  }
+});
+
+window.addEventListener('appinstalled', () => {
+  const btn = $('installBtn');
+  if (btn) btn.classList.add('hidden');
+  toast('App installed successfully!');
+});
+
+drawDir();
+try{pick('prompt')}catch(e){console.error(e)}
+</script>
+<script>
+/* ---------- PWA Install Prompt Handler ---------- */
+let deferredPrompt;
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  const btn = document.getElementById('installBtn');
+  if (btn) {
+    btn.classList.remove('hidden');
+    btn.onclick = async () => {
+      btn.classList.add('hidden');
+      deferredPrompt.prompt();
+      const { outcome } = await deferredPrompt.userChoice;
+      if (outcome === 'accepted') {
+        toast('App installation started!');
+      }
+      deferredPrompt = null;
+    };
+  }
+});
+
+window.addEventListener('appinstalled', () => {
+  const btn = document.getElementById('installBtn');
+  if (btn) btn.classList.add('hidden');
+  toast('App installed successfully!');
+});
+
+// Service Worker Registration
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js')
+    .then(() => console.log('Service Worker Registered'));
+}
+</script>
+</body>
+</html>
